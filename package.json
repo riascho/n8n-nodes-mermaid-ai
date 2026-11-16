@@ -1,0 +1,50 @@
+{
+	"name": "n8n-nodes-mermaid-ai",
+	"version": "0.1.0",
+	"description": "Send diagram code, or a description, over HTTP. Get back one of four things: Validate: whether the code is valid, and if not, the line and column where it breaks, with a stable error code your program can act on. Render: SVG, PNG, or PDF, with any Mermaid theme, look, and layout. Generate: describe a diagram, get working Mermaid code. Repair: send broken code, get working code.",
+	"license": "MIT",
+	"homepage": "https://mermaid.ai/",
+	"keywords": [
+		"n8n-community-node-package"
+	],
+	"author": {
+		"name": "riascho",
+		"email": "123465523+riascho@users.noreply.github.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/riascho/n8n-nodes-mermaid-ai.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/MermaidAiApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/MermaidAi/MermaidAi.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
