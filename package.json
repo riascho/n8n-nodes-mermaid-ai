@@ -1,7 +1,7 @@
 {
 	"name": "n8n-nodes-mermaid-ai",
 	"version": "0.1.0",
-	"description": "Send diagram code, or a description, over HTTP. Get back one of four things: Validate: whether the code is valid, and if not, the line and column where it breaks, with a stable error code your program can act on. Render: SVG, PNG, or PDF, with any Mermaid theme, look, and layout. Generate: describe a diagram, get working Mermaid code. Repair: send broken code, get working code.",
+	"description": "n8n node for the Mermaid API: validate, render, generate and repair Mermaid diagrams.",
 	"license": "MIT",
 	"homepage": "https://mermaid.ai/",
 	"keywords": [

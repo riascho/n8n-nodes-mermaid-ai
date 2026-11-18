@@ -2,18 +2,23 @@ import type {
 	IAuthenticateGeneric,
 	ICredentialTestRequest,
 	ICredentialType,
+	Icon,
 	INodeProperties,
 } from 'n8n-workflow';
 
 export class MermaidAiApi implements ICredentialType {
 	name = 'mermaidAiApi';
 
-	displayName = 'Mermaid Ai API';
+	displayName = 'Mermaid AI API';
 
 	// Link to your community node's README
 	documentationUrl =
 		'https://github.com/riascho/n8n-nodes-mermaid-ai?tab=readme-ov-file#credentials';
-	icon = 'file:mermaidAi.svg' as const;
+
+	icon: Icon = {
+		light: 'file:../nodes/MermaidAi/mermaidAi.svg',
+		dark: 'file:../nodes/MermaidAi/mermaidAi.dark.svg',
+	};
 
 	properties: INodeProperties[] = [
 		{
