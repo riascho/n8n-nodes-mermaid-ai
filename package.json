@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-mermaid-ai",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n node for the Mermaid API: validate, render, generate and repair Mermaid diagrams.",
 	"license": "MIT",
 	"homepage": "https://mermaid.ai/",
