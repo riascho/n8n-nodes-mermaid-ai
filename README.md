@@ -121,6 +121,6 @@ The node can be used as a tool by an AI Agent. Validate, Generate and Repair ret
 
 ## Version history
 
-### 0.1.0
+### 0.1.1
 
 First release: Balance Get and Diagram Validate, Render, Generate and Repair.
